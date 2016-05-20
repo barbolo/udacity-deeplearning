@@ -1,3 +1,4 @@
 tensorflow-udacity
 *.png
 *.tar.gz
+*.pickle

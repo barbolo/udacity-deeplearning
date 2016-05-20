@@ -8,11 +8,11 @@ Tensorflow via Docker
 cd tensorflow-udacity
 docker build --pull -t $USER/assignments .
 
-# run notebooks
-docker run -p 8888:8888 -v $(pwd):/notebooks -it --rm $USER/assignments /run_jupyter.sh
+# run jupyter notebooks
+docker run -p 8888:8888 -v $(pwd):/udacity -v $(pwd)/notebooks:/notebooks -it --rm $USER/assignments /run_jupyter.sh
 
 # start a console
-docker run -v /Users/barbolo/Documents/git/deep-learning/udacity:/udacity -it --rm $USER/assignments /bin/bash
+docker run -v $(pwd):/udacity -v $(pwd)/notebooks:/notebooks -it --rm $USER/assignments /bin/bash
 ```
 
 

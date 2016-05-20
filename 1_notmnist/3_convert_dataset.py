@@ -58,3 +58,7 @@ def maybe_pickle(data_folders, min_num_images_per_class, force=False):
 
 train_datasets = maybe_pickle(train_folders, 45000)
 test_datasets = maybe_pickle(test_folders, 1800)
+
+print
+print('train_datasets = [\'%s\']' % "', '".join(train_datasets))
+print('test_datasets = [\'%s\']' % "', '".join(test_datasets))
