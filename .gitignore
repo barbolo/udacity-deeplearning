@@ -1,4 +1,4 @@
-tensorflow-udacity
-*.png
+lesson1/*.png
+notebooks/*.png
 *.tar.gz
 *.pickle
